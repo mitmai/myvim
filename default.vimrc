@@ -95,10 +95,8 @@ highlight TabLineFill ctermbg=green
 highlight TabLineSel ctermbg=red
 
 " Set F1-F12 shortcut keys.
-nnoremap <silent> d :NERDTree<CR>
-nnoremap <silent> dc :NERDTreeClose<CR>
-map <silent> l :TagbarToggle<CR>
-map <silent> lc :TagbarClose<CR>
+map <silent> d :NERDTree<CR>
+map <silent> m :TagbarToggle<CR>
 map <buffer><silent> <F5> :w<CR>:make <CR>:cw
 
 " Activate pathogen.vim
@@ -120,12 +118,12 @@ autocmd BufReadPost *
 autocmd! BufWritePost .vimrc source %
 
 " Create a template file.
-autocmd BufNewFile *.html so ~/.vim/html.txt
-autocmd BufNewFile *.html exe "1," . 10 . "g/name=\"created\" content=\".*\"/s//name=\"created\" content=\"" .strftime("%Y-%m-%d"). "\""
-autocmd BufWritePre,FileWritePre *.html exe "1," . 10 . "g/name=\"modified\" content=\".*\"/s//name=\"modified\" content=\"" .strftime("%c"). "\""
+autocmd BufNewFile *.html so ~/.vim/template/html.txt
+"autocmd BufNewFile *.html exe "1," . 10 . "g/name=\"created\" content=\".*\"/s//name=\"created\" content=\"" .strftime("%Y-%m-%d"). "\""
+"autocmd BufWritePre,FileWritePre *.html exe "1," . 10 . "g/name=\"modified\" content=\".*\"/s//name=\"modified\" content=\"" .strftime("%c"). "\""
 
 " C/C++ template file
-autocmd BufNewFile *.h so ~/.vim/cheader.txt
+autocmd BufNewFile *.h so ~/.vim/template/cheader.txt
 autocmd BufNewFile *.h exe "1," . 10 . "g/_author_ (_email_)/s//Three Ocean (to@bcloud.us)"
 
 

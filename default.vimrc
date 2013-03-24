@@ -132,17 +132,16 @@ let g:tagbar_ctags_bin = 'ctags'
 let g:tagbar_width = 30
 
 " PHP Documentation plugin.
-inoremap <C-K> <ESC>:call PhpDocSingle()<CR>i
-nnoremap <C-K> :call PhpDocSingle()<CR>
-vnoremap <C-K> :call PhpDocRange()<CR>
+"inoremap <C-K> <ESC>:call PhpDocSingle()<CR>i
+"nnoremap <C-K> :call PhpDocSingle()<CR>
+"vnoremap <C-K> :call PhpDocRange()<CR>
 
 " Command-T plugin.
 let g:CommandTMaxHeight = 15
 map t :CommandT<CR>
 
 " SuperTab plugin.
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-
+"let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 " MiniBufExpl
 map <C-N> :MBEbn <CR>

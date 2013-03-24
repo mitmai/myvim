@@ -24,9 +24,6 @@
 " SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 "
 
-" color scheme
-colorscheme mycolor
-
 filetype on
 if &diff
     filetype plugin off
@@ -151,5 +148,8 @@ map <C-P> :MBEbp <CR>
 "The BSD 3-Clause License
 map 3<Leader>h :so ~/.vim/template/bsd3lic.txt<CR>
 map 1<Leader>h :so ~/.vim/template/gplic.txt<CR>
+
+" color scheme
+colorscheme mycolor
 
 

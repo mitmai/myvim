@@ -25,7 +25,7 @@
 "
 
 " color scheme
-colorscheme darkblue
+colorscheme mycolor
 
 filetype on
 if &diff
@@ -66,7 +66,7 @@ syntax on
 "hi Cursor ctermbg=Gray ctermfg=Blue
 "highlight clear SpellBad
 "highlight SpellBad term=underline cterm=underline ctermfg=red
-
+"hi PmenuSel guifg=#c0c0c0 guibg=#2050d0 ctermfg=blue ctermbg=fg cterm=reverse
 
 " Set status line.
 set ls=2

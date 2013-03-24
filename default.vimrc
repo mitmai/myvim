@@ -100,7 +100,8 @@ map <silent> m :TagbarToggle<CR>
 map <buffer><silent> <F5> :w<CR>:make <CR>:cw
 
 " Activate pathogen.vim
-call pathogen#runtime_append_all_bundles()
+"call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
 call pathogen#helptags()
 
 " Removing tailing spaces.

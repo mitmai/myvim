@@ -29,4 +29,11 @@ ln -s $INSTALL_PATH/tools/pathogen/autoload/pathogen.vim $INSTALL_PATH/autoload/
 ln -s $INSTALL_PATH/default.vimrc $HOME/.vimrc
 ln -s $INSTALL_PATH $HOME/.vim
 
+# 4. plugin related setup
+# command-t
+echo "Setup Command-T.. See https://github.com/wincent/Command-T for detail"
+cd $INSTALL_PATH/bundle/command-t/ruby/command-t
+ruby extconf.rb
+make
+
 echo "Done. Enjoy vim!"

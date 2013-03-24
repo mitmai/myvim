@@ -54,8 +54,8 @@ set shiftwidth=2
 set tabstop=2
 
 " Auto-complete using Ctrl+K.
-set dictionary-=~/.vim/funclist.txt
-set complete-=k complete+=k
+"set dictionary-=~/.vim/funclist.txt
+"set complete-=k complete+=k
 
 " Syntax highlight.
 syntax on
@@ -149,4 +149,7 @@ map <C-N> :MBEbn <CR>
 map <C-P> :MBEbp <CR>
 
 "The BSD 3-Clause License
-map 3<Leader>h :so ~/.vim/template/bsd3lic.txt
+map 3<Leader>h :so ~/.vim/template/bsd3lic.txt<CR>
+map 1<Leader>h :so ~/.vim/template/gplic.txt<CR>
+
+

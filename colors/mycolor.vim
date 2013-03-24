@@ -19,7 +19,7 @@ hi ErrorMsg   guifg=#ffffff guibg=#287eff           ctermfg=white ctermbg=lightb
 hi Visual   guifg=#8080ff guibg=fg    gui=reverse       ctermfg=lightblue ctermbg=fg cterm=reverse
 hi VisualNOS  guifg=#8080ff guibg=fg    gui=reverse,underline ctermfg=lightblue ctermbg=fg cterm=reverse,underline
 hi Todo     guifg=#d14a14 guibg=#1248d1           ctermfg=red ctermbg=darkblue
-hi Search   guifg=#90fff0 guibg=#2050d0           ctermfg=white ctermbg=darkblue cterm=underline term=underline
+hi Search   guifg=#90fff0 guibg=#2050d0           ctermfg=white ctermbg=red cterm=underline term=underline
 hi IncSearch  guifg=#b0ffff guibg=#2050d0             ctermfg=darkblue ctermbg=gray
 
 hi SpecialKey   guifg=cyan      ctermfg=darkcyan

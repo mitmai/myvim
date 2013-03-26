@@ -65,17 +65,6 @@ syntax on
 "highlight SpellBad term=underline cterm=underline ctermfg=red
 "hi PmenuSel guifg=#c0c0c0 guibg=#2050d0 ctermfg=blue ctermbg=fg cterm=reverse
 
-" Set status line.
-set ls=2
-set statusline=%<%f\ %m%=\ %h%r\ %-19([%p%%]\ %3l,%02c%03V%)%y
-highlight StatusLine term=bold,reverse cterm=bold,reverse
-
-" Set cursor line.
-set cursorline
-highlight CursorLine cterm=bold ctermbg=blue
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
-
 " Always use utf-8 encoding.
 set fileencoding=utf-8
 set fileencodings=utf-8,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1
@@ -144,6 +133,7 @@ map t :CommandT<CR>
 " MiniBufExpl
 map <C-N> :MBEbn <CR>
 map <C-P> :MBEbp <CR>
+let g:miniBufExplorerMoreThanOne=1
 
 "The BSD 3-Clause License
 map 3<Leader>h :so ~/.vim/template/bsd3lic.txt<CR>
@@ -152,4 +142,20 @@ map 1<Leader>h :so ~/.vim/template/gplic.txt<CR>
 " color scheme
 colorscheme mycolor
 
+" Set status line.
+set ls=2
+set statusline=%<%f\ %m%=\ %h%r\ %-19([%p%%]\ %3l,%02c%03V%)%y
+highlight StatusLine term=bold,reverse cterm=bold,reverse
+
+" Set cursor line.
+set cursorline
+highlight CursorLine cterm=bold ctermbg=blue
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
+
+let myvim=$HOME."/.vim/myvimrc"
+if filereadable(myvim)
+  :so ~/.vim/myvimrc
+endif
 

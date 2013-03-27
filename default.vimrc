@@ -162,8 +162,8 @@ match OverLength /\%81v.\+/
 hi MBEChanged guibg=darkblue ctermbg=darkblue ctermfg=yellow
 hi MBENormal guibg=darkblue ctermbg=darkblue ctermfg=white
 
-let myvim=$HOME."/.vim/myvimrc"
+let myvim=$HOME."/.vim/.vimrc_".$USER
 if filereadable(myvim)
-  :so ~/.vim/myvimrc
+  :so myvim
 endif
 

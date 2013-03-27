@@ -42,7 +42,10 @@ mkdir $INSTALL_PATH/autoload
 ln -s $INSTALL_PATH/tools/pathogen/autoload/pathogen.vim $INSTALL_PATH/autoload/pathogen.vim
 
 # 3. link .vimrc and .vim
+if [ ! -f $INSTALL_PATH/myvimrc ]; then
 touch $INSTALL_PATH/myvimrc
+fi
+ln -s $INSTALL_PATH/myvimrc $HOME/.vimrc_$USER
 ln -s $INSTALL_PATH/default.vimrc $HOME/.vimrc
 ln -s $INSTALL_PATH $HOME/.vim
 

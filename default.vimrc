@@ -117,6 +117,7 @@ autocmd BufNewFile *.h exe "1," . 10 . "g/_author_ (_email_)/s//Three Ocean (to@
 " Tagbar plugin.
 let g:tagbar_ctags_bin = 'ctags'
 let g:tagbar_width = 30
+nnoremap <leader>l :TagbarToggle<CR>
 
 " PHP Documentation plugin.
 "inoremap <C-K> <ESC>:call PhpDocSingle()<CR>i
@@ -125,15 +126,20 @@ let g:tagbar_width = 30
 
 " Command-T plugin.
 let g:CommandTMaxHeight = 15
-map t :CommandT<CR>
+"map t :CommandT<CR>
+noremap <Leader>o :CommandT<CR>
+noremap <Leader>m :CommandTBuffer<CR>
 
 " SuperTab plugin.
 "let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:SuperTabDefaultCompletionType = "context""
 
 " MiniBufExpl
 map <C-N> :MBEbn <CR>
 map <C-P> :MBEbp <CR>
-let g:miniBufExplorerMoreThanOne=1
+let g:miniBufExplorerMoreThanOne = 1
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplCheckDupeBufs = 0
 
 "The BSD 3-Clause License
 map 3<Leader>h :so ~/.vim/template/bsd3lic.txt<CR>
@@ -153,6 +159,8 @@ highlight CursorLine cterm=bold ctermbg=blue
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
+hi MBEChanged guibg=darkblue ctermbg=darkblue ctermfg=yellow
+hi MBENormal guibg=darkblue ctermbg=darkblue ctermfg=white
 
 let myvim=$HOME."/.vim/myvimrc"
 if filereadable(myvim)

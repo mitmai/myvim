@@ -81,8 +81,8 @@ highlight TabLineFill ctermbg=green
 highlight TabLineSel ctermbg=red
 
 " Set F1-F12 shortcut keys.
-map <silent> d :NERDTree<CR>
-map <silent> m :TagbarToggle<CR>
+map <silent> <Leader>f :NERDTree<CR>
+map <silent> <Leader>l :TagbarToggle<CR>
 map <buffer><silent> <F5> :w<CR>:make <CR>:cw
 
 " Activate pathogen.vim
@@ -117,6 +117,7 @@ autocmd BufNewFile *.h exe "1," . 10 . "g/_author_ (_email_)/s//Three Ocean (to@
 " Tagbar plugin.
 let g:tagbar_ctags_bin = 'ctags'
 let g:tagbar_width = 30
+let g:tagbar_iconchars = ['+', '-']
 nnoremap <leader>l :TagbarToggle<CR>
 
 " PHP Documentation plugin.
@@ -127,12 +128,12 @@ nnoremap <leader>l :TagbarToggle<CR>
 " Command-T plugin.
 let g:CommandTMaxHeight = 15
 "map t :CommandT<CR>
-noremap <Leader>o :CommandT<CR>
+noremap <Leader>e :CommandT<CR>
 noremap <Leader>m :CommandTBuffer<CR>
 
 " SuperTab plugin.
 "let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-let g:SuperTabDefaultCompletionType = "context""
+"let g:SuperTabDefaultCompletionType = "context""
 
 " MiniBufExpl
 map <C-N> :MBEbn <CR>
@@ -162,8 +163,11 @@ match OverLength /\%81v.\+/
 hi MBEChanged guibg=darkblue ctermbg=darkblue ctermfg=yellow
 hi MBENormal guibg=darkblue ctermbg=darkblue ctermfg=white
 
-let myvim=$HOME."/.vim/.vimrc_".$USER
+let myvim=$HOME."/.vimrc_".$USER
 if filereadable(myvim)
-  :so myvim
+  :so $HOME/.vimrc_$USER
 endif
+
+" Hotkey
+noremap <Leader>q :wqa!<CR>
 

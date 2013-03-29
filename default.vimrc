@@ -127,7 +127,7 @@ nnoremap <leader>l :TagbarToggle<CR>
 
 " Command-T plugin.
 let g:CommandTMaxHeight = 15
-"map t :CommandT<CR>
+map t :CommandT<CR>
 noremap <Leader>e :CommandT<CR>
 noremap <Leader>m :CommandTBuffer<CR>
 

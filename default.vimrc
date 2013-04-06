@@ -142,6 +142,36 @@ let g:miniBufExplorerMoreThanOne = 1
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplCheckDupeBufs = 0
 
+" DoxygenToolKit
+"let g:DoxygenToolkit_commentType = "C++"
+let g:DoxygenToolkit_briefTag_pre="@Brief "
+let g:DoxygenToolkit_paramTag_pre="@Param "
+let g:DoxygenToolkit_returnTag="@Returns "
+let g:DoxygenToolkit_authorName="Tim Hsieh"
+let g:DoxygenToolkit_licenseTag=                            " \<enter>Copyright (c) 2013, Three Ocean (to@bcloud.us). All rights reserved.         "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>Redistribution and use in source and binary forms, with or without           "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>modification, are permitted provided that the following conditions are met:  "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>    * Redistributions of source code must retain the above copyright         "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>      notice, this list of conditions and the following disclaimer.          "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>    * Redistributions in binary form must reproduce the above copyright      "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>      notice, this list of conditions and the following disclaimer in the    "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>      documentation and/or other materials provided with the distribution.   "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>    * Neither the name of the <organization> nor the                         "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>      names of its contributors may be used to endorse or promote products   "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>      derived from this software without specific prior written permission.  "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>                                                                             "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\""
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE    "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE   "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>ARE DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY       "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES   "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND  "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT   "
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS"
+let g:DoxygenToolkit_licenseTag=DoxygenToolkit_licenseTag . " \<enter>SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                 "
+
+
 "The BSD 3-Clause License
 map 3<Leader>h :so ~/.vim/template/bsd3lic.txt<CR>
 map 1<Leader>h :so ~/.vim/template/gplic.txt<CR>

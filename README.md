@@ -15,3 +15,7 @@ align             - https://github.com/vim-scripts/Align
 nerdcommenter     - https://github.com/scrooloose/nerdcommenter.git
 nerdtree          - https://github.com/scrooloose/nerdtree.git
 autoclose         - https://github.com/Townk/vim-autoclose.git
+doxygentoolkit    - https://github.com/vim-scripts/DoxygenToolkit.vim.git
+
+Installation
+bash myvim/setup.sh

@@ -135,12 +135,20 @@ noremap <Leader>m :CommandTBuffer<CR>
 "let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 "let g:SuperTabDefaultCompletionType = "context""
 
+" NERDTree
+let NERDTreeDirArrows=0
+
 " MiniBufExpl
 map <C-N> :MBEbn <CR>
 map <C-P> :MBEbp <CR>
 let g:miniBufExplorerMoreThanOne = 1
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplCheckDupeBufs = 0
+let g:miniBufExplModSelTarget = 0
+let g:miniBufExplCloseOnSelect = 1
+let g:miniBufExplForceSyntaxEnable = 0
+hi MBEChanged guibg=darkblue ctermbg=darkblue ctermfg=yellow
+hi MBENormal guibg=darkblue ctermbg=darkblue ctermfg=white
 
 " DoxygenToolKit
 "let g:DoxygenToolkit_commentType = "C++"
@@ -190,9 +198,6 @@ highlight CursorLine cterm=bold ctermbg=blue
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
-hi MBEChanged guibg=darkblue ctermbg=darkblue ctermfg=yellow
-hi MBENormal guibg=darkblue ctermbg=darkblue ctermfg=white
-
 let myvim=$HOME."/.vimrc_".$USER
 if filereadable(myvim)
   :so $HOME/.vimrc_$USER
@@ -200,4 +205,7 @@ endif
 
 " Hotkey
 noremap <Leader>q :wqa!<CR>
+
+" Search path
+"set path=**
 

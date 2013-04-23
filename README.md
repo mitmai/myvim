@@ -8,14 +8,14 @@ My personal vim environment.
 3. cross platform like Mac OS and Ubuntu
 
 Plugin
-pathogen          - https://github.com/tpope/vim-pathogen
-Command-T         - https://github.com/wincent/Command-T
-tagbar            - https://github.com/majutsushi/tagbar
-align             - https://github.com/vim-scripts/Align
-nerdcommenter     - https://github.com/scrooloose/nerdcommenter.git
-nerdtree          - https://github.com/scrooloose/nerdtree.git
-autoclose         - https://github.com/Townk/vim-autoclose.git
-doxygentoolkit    - https://github.com/vim-scripts/DoxygenToolkit.vim.git
+pathogen          - https://github.com/tpope/vim-pathogen<br>
+Command-T         - https://github.com/wincent/Command-T<br>
+tagbar            - https://github.com/majutsushi/tagbar<br>
+align             - https://github.com/vim-scripts/Align<br>
+nerdcommenter     - https://github.com/scrooloose/nerdcommenter.git<br>
+nerdtree          - https://github.com/scrooloose/nerdtree.git<br>
+autoclose         - https://github.com/Townk/vim-autoclose.git<br>
+doxygentoolkit    - https://github.com/vim-scripts/DoxygenToolkit.vim.git<br>
 
 Installation
 bash myvim/setup.sh

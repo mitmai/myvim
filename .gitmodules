@@ -31,3 +31,6 @@
 [submodule "bundle/doxygentoolkit"]
 	path = bundle/doxygentoolkit
 	url = https://github.com/vim-scripts/DoxygenToolkit.vim.git
+[submodule "bundle/vim-doc-tw"]
+	path = bundle/vim-doc-tw
+	url = https://github.com/lazywei/vim-doc-tw.git

@@ -34,3 +34,6 @@
 [submodule "bundle/vim-doc-tw"]
 	path = bundle/vim-doc-tw
 	url = https://github.com/lazywei/vim-doc-tw.git
+[submodule "bundle/c.vim"]
+	path = bundle/c.vim
+	url = https://github.com/vim-scripts/c.vim.git

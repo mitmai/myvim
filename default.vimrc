@@ -53,6 +53,15 @@ set tabstop=2
 " Auto-complete using Ctrl+K.
 "set dictionary-=~/.vim/funclist.txt
 "set complete-=k complete+=k
+filetype plugin on
+au FileType php setl ofu=phpcomplete#CompletePHP
+au FileType ruby,eruby setl ofu=rubycomplete#Complete
+au FileType html,xhtml setl ofu=htmlcomplete#CompleteTags
+au FileType c setl ofu=ccomplete#CompleteCpp
+au FileType css setl ofu=csscomplete#CompleteCSS
+au FileType css setl ofu=csscomplete#CompleteCSS
+au FileType js setl ofu=javascriptcomplete#CompleteJS
+
 
 " Syntax highlight.
 syntax on
@@ -69,7 +78,7 @@ syntax on
 set fileencoding=utf-8
 set fileencodings=utf-8,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1
 set encoding=utf8
-set tenc=utf8
+set termencoding=utf8
 
 " Set foldering.
 set foldmethod=syntax
@@ -124,11 +133,12 @@ nnoremap <leader>l :TagbarToggle<CR>
 "inoremap <C-K> <ESC>:call PhpDocSingle()<CR>i
 "nnoremap <C-K> :call PhpDocSingle()<CR>
 "vnoremap <C-K> :call PhpDocRange()<CR>
+"
 
+let g:UltiSnipsSnippetsDir = "~/.vim/bundle/UltiSnips/UltiSnips"
 " Command-T plugin.
 let g:CommandTMaxHeight = 15
-map t :CommandT<CR>
-noremap <Leader>e :CommandT<CR>
+noremap <Leader>t :CommandT<CR>
 noremap <Leader>m :CommandTBuffer<CR>
 
 " SuperTab plugin.
@@ -138,9 +148,18 @@ noremap <Leader>m :CommandTBuffer<CR>
 " NERDTree
 let NERDTreeDirArrows=0
 
+" neocomplcache
+let g:neocomplcache_enable_at_startup = 1
+
+" CtrlP, disalbe c-p to avoid conflict
+let g:ctrlp_map = ''
+noremap <Leader>p :CtrlP<CR>
+noremap <Leader>e :CtrlP<CR>
+let g:ctrlp_working_path_mode = 'a'
+
 " MiniBufExpl
-map <C-N> :MBEbn <CR>
-map <C-P> :MBEbp <CR>
+map <c-n> :MBEbn <CR>
+map <c-p> :MBEbp <CR>
 let g:miniBufExplorerMoreThanOne = 1
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplCheckDupeBufs = 0

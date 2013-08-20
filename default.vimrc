@@ -50,6 +50,7 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 
+let mapleader = ","
 " Auto-complete using Ctrl+K.
 "set dictionary-=~/.vim/funclist.txt
 "set complete-=k complete+=k
@@ -223,7 +224,8 @@ if filereadable(myvim)
 endif
 
 " Hotkey
-noremap <Leader>q :wqa!<CR>
+noremap <Leader>w :wqa!<CR>
+noremap <Leader>q :qa!<CR>
 
 " Search path
 "set path=**

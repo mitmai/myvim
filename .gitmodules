@@ -16,9 +16,6 @@
 [submodule "bundle/autoclose"]
   path = bundle/autoclose
   url = https://github.com/Townk/vim-autoclose.git
-[submodule "bundle/minibufexpl"]
-  path = bundle/minibufexpl
-  url = https://github.com/fholgado/minibufexpl.vim
 [submodule "bundle/supertab"]
   path = bundle/supertab
   url = https://github.com/ervandew/supertab
@@ -50,5 +47,8 @@
   path = bundle/vim-surround
   url = https://github.com/tpope/vim-surround
 [submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+  path = bundle/nerdtree
+  url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/minibufexpl"]
+	path = bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim

@@ -166,9 +166,8 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplCheckDupeBufs = 0
 let g:miniBufExplModSelTarget = 0
 let g:miniBufExplCloseOnSelect = 1
-let g:miniBufExplForceSyntaxEnable = 0
-hi MBEChanged guibg=darkblue ctermbg=darkblue ctermfg=yellow
-hi MBENormal guibg=darkblue ctermbg=darkblue ctermfg=white
+let g:miniBufExplForceSyntaxEnable = 1
+
 
 " DoxygenToolKit
 "let g:DoxygenToolkit_commentType = "C++"
@@ -205,6 +204,7 @@ map 3<Leader>h :so ~/.vim/template/bsd3lic.txt<CR>
 map 1<Leader>h :so ~/.vim/template/gplic.txt<CR>
 
 " color scheme
+"colorscheme putty
 colorscheme mycolor
 
 " Set status line.
@@ -218,6 +218,7 @@ highlight CursorLine cterm=bold ctermbg=blue
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
+
 let myvim=$HOME."/.vimrc_".$USER
 if filereadable(myvim)
   :so $HOME/.vimrc_$USER
@@ -227,6 +228,15 @@ endif
 noremap <Leader>w :wqa!<CR>
 noremap <Leader>q :qa!<CR>
 
+" ctags
+map <Leader>rt :!ctags --extra=+f --exclude=.git --exclude=log -R *<CR><CR>
+
 " Search path
 "set path=**
 
+highlight MBEChanged ctermbg=gray ctermfg=red
+highlight MBENormal ctermbg=gray ctermfg=white
+highlight MBEVisibleActiveNormal ctermbg=gray ctermfg=green
+highlight MBEVisibleChanged ctermbg=gray ctermfg=red
+highlight MBEVisibleNormal ctermbg=gray ctermbg=green
+highlight MBEVisibleActiveChanged ctermbg=gray ctermfg=yellow

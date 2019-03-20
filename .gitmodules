@@ -50,5 +50,8 @@
   path = bundle/nerdtree
   url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/minibufexpl"]
-	path = bundle/minibufexpl
-	url = https://github.com/fholgado/minibufexpl.vim
+  path = bundle/minibufexpl
+  url = https://github.com/fholgado/minibufexpl.vim
+[submodule "bundle/vim-sneak"]
+	path = bundle/vim-sneak
+	url = https://github.com/justinmk/vim-sneak
